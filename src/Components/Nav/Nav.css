@@ -1,0 +1,17 @@
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+ul li{
+padding:5px 15px 5px 13px;
+transition: background-color  1s;
+border-radius: 10%;
+}
+
+ul li:hover{
+    background-color: rgba(255, 255, 0, 0.322);
+    box-shadow: 1px;
+
+}
+
