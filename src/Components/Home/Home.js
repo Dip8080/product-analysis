@@ -1,9 +1,11 @@
 import React from 'react';
+import Review from '../Review/Review';
 import('./Home.css')
 
 const Home = () => {
     return (
-        <div className=' flex  py-6'>
+        <div className=' py-6'>
+            <div className='flex'>
             <div className=' bg-yellow-500 parent' >
                 <h1 className='text-3xl subpixel-antialiased py-6 col-end-6'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -20,6 +22,10 @@ const Home = () => {
             </div>
             <div className=' image pt-5'>
                     <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+            </div>
+            </div>
+            <div>
+                <Review></Review>
             </div>
         </div>
     );
