@@ -15,23 +15,25 @@ const Home = () => {
   }
     return (
         <div className='p-5 py-6'>
-            <div className='flex'>
-            <div className=' bg-fuchsia-500 parent' >
+            <div className='flex '>
+            <div className=' bg-fuchsia-500 parent left' >
                 <h1 className='text-3xl subpixel-antialiased py-6 col-end-6 shadow-lg p-2'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                   Don't just wear it , 
                 </h1>
-                <h1 className='text-3xl shadow-lg p-2'>
-                  <span className='text-fuchsia-800 subpixel-antialiased'>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                <h1 className='text-4xl shadow-lg p-2'>
+                  <span className='text-fuchsia-800 subpixel-antialiased'>  Live in it </span>
                 </h1>
                 <p className='text-1xl py-2 subpixel-antialiased'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique ratione veritatis rem, hic perferendis facere dicta nesciunt ullam necessitatibus suscipit, voluptas, architecto ex. Excepturi totam nostrum non debitis nobis?
+                   Extemly comfortable , easy to wear , water proof and colorful
+                   collection of sneakers . jog in it , gym in it , wear it in your
+                   workplace . your feet won't feel a thing .
                 </p>
 
-                <button className='shadow-lg cardBtn rounded bg-fuchsia-700 hover:bg-rose-800 p-3  mt-3  flex subpixel-antialiased'>clicl for details</button>
+                <button className='shadow-lg cardBtn rounded bg-fuchsia-700 hover:bg-fuchsia-800 p-3  mt-3  flex subpixel-antialiased'>clicl for details</button>
 
             </div>
             <div className=' image pt-5'>
-                    <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                    <img  src="https://wallpaper.dog/large/11381.jpg" alt="" />
             </div>
             </div>
             <div className=''>
@@ -41,7 +43,7 @@ const Home = () => {
                     review.slice(0,3).map(x=><Reviewcard key={x.id} obj={x}></Reviewcard>)
                 }
             </div>
-            <button onClick={funHandle} className='shadow cardBtn rounded bg-rose-700 hover:bg-rose-800 p-3  mt-3  flex subpixel-antialiased'>see more</button> 
+            <button onClick={funHandle} className='shadow cardBtn rounded bg-fuchsia-700 hover:bg-fuchsia-800 p-3  mt-3  flex subpixel-antialiased'>see more</button> 
         </div>
     );
 };
