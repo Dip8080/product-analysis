@@ -1,8 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import useReview from '../Hooks/useReview';
 import Review from '../Review/Review';
+import Reviewcard from '../ReviewCard/Reviewcard';
 import('./Home.css')
 
 const Home = () => {
+    const[review,setreview] = useReview();
+    let navigate = useNavigate();
+  const funHandle =()=>{
+      navigate ('/review/');
+     setreview(review);
+  }
     return (
         <div className=' py-6'>
             <div className='flex'>
@@ -25,8 +34,11 @@ const Home = () => {
             </div>
             </div>
             <div>
-                <Review></Review>
+                {
+                    review.slice(0,3).map(x=><Reviewcard key={x.id} obj={x}></Reviewcard>)
+                }
             </div>
+            <button onClick={funHandle} className='shadow cardBtn rounded bg-rose-700 hover:bg-rose-800 p-3  mt-3  flex subpixel-antialiased'>see more</button> 
         </div>
     );
 };
