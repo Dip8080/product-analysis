@@ -7,11 +7,13 @@ import Error from './Components/Error/Error';
 import Home from './Components/Home/Home';
 import Nav from './Components/Nav/Nav';
 import Review from './Components/Review/Review';
+import Title from './Components/Title/Title';
 
 function App() {
   return (
     <div className="App">
       <Nav></Nav>
+      <Title></Title>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/review' element={<Review></Review>}></Route>

@@ -6,7 +6,6 @@ visit our live site here==> [Sneakers Saga](https://assignment-nine-react-router
 
 1. react router
 2. react tailwind
-3. react router
 4. rechart
 
 ## done in this project :
