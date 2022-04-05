@@ -34,6 +34,7 @@ const Home = () => {
             </div>
             </div>
             <div>
+                
                 {
                     review.slice(0,3).map(x=><Reviewcard key={x.id} obj={x}></Reviewcard>)
                 }
