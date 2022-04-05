@@ -9,8 +9,8 @@ const Review = () => {
 
     return (
         <div>
-            <h1 className=''>customers review({reviews.length})</h1>
-            <div>
+            <h1 className='p-3 shadow-xl flex justify-center text-3xl'>customers review({reviews.length})</h1>
+            <div className='p-5'>
                 {
                     reviews.map(x=><Reviewcard obj={x} key={x.id} > </Reviewcard>)
                 }

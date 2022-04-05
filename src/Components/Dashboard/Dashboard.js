@@ -17,6 +17,7 @@ const Dashboard = () => {
             <Bar dataKey="sell" fill="#8884d8" />
             <XAxis dataKey="month" />
     <YAxis  dataKey="sell" name="weight" unit="$" />
+    <Tooltip />
             </BarChart>
       
             </div>
@@ -29,6 +30,7 @@ const Dashboard = () => {
     <Line type="monotone" dataKey="revenue"  ></Line>
     <XAxis dataKey="month" />
     <YAxis  dataKey="revenue" name="weight" unit="$" />
+    <Tooltip />
   
           </LineChart>
             </div>
